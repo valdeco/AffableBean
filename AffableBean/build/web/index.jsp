@@ -1,6 +1,5 @@
 <c:set var='view' value='/index' scope='session' />
 
-
 <%-- HTML markup starts below --%>
 
 <div id="indexLeftColumn">

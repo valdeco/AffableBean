@@ -18,7 +18,7 @@
             SELECT * FROM category
         </sql:query>
 
-        <table border="1">
+        <table>
             <!-- column headers -->
             <tr>
                 <c:forEach var="columnName" items="${result.columnNames}">

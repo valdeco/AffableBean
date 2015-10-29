@@ -5,8 +5,9 @@ import java.util.*;
 
 /**
  *
- * @author valdemir
+ * @author Valdemir
  */
+
 public class ShoppingCart {
 
     List<ShoppingCartItem> items;

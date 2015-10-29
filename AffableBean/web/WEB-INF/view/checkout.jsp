@@ -3,21 +3,20 @@
      users view the same page when switching between English and Czech. --%>
 <c:set var="view" value="/checkout" scope="session"/>
 
-
-<script src="js/jquery.validate.js" type="text/javascript"></script>
+<script src="resources/js/jquery.validate.js" type="text/javascript"></script>
 
 <%-- Add Czech field validation messages if 'cs' is the chosen locale --%>
 <c:choose>
   <%-- When 'language' session attribute hasn't been set, check browser's preferred locale --%>
   <c:when test="${empty language}">
     <c:if test="${pageContext.request.locale.language eq 'cs'}">
-      <script src="js/localization/messages_cs.js" type="text/javascript"></script>
+      <script src="resources/js/localization/messages_cs.js" type="text/javascript"></script>
     </c:if>
   </c:when>
   <%-- Otherwise, check 'language' session attribute --%>
   <c:otherwise>
     <c:if test="${sessionScope['javax.servlet.jsp.jstl.fmt.locale.session'] eq 'cs'}">
-      <script src="js/localization/messages_cs.js" type="text/javascript"></script>
+      <script src="resources/js/localization/messages_cs.js" type="text/javascript"></script>
     </c:if>
   </c:otherwise>
 </c:choose>
@@ -53,11 +52,10 @@
 <%-- HTML markup starts below --%>
 
 <div id="singleColumn">
-
+    
     <h2><fmt:message key="checkout"/></h2>
-
     <p><fmt:message key="checkoutText"/></p>
-
+    
     <c:if test="${!empty orderFailureFlag}">
         <p class="error"><fmt:message key="orderFailureError"/></p>
     </c:if>
@@ -159,7 +157,7 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="submit" value="<fmt:message key='submit'/>">
+                    <input type="submit" class="btn btn-primary btn-group-sm" value="<fmt:message key='submit'/>">
                 </td>
             </tr>
         </table>
@@ -170,7 +168,7 @@
         <ul>
             <li><fmt:message key="nextDayGuarantee"/></li>
             <li><fmt:message key="deliveryFee1"/>
-                <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${initParam.deliverySurcharge}"/>
+                <fmt:formatNumber type="currency" currencySymbol="$ " value="${initParam.deliverySurcharge}"/>
                 <fmt:message key="deliveryFee2"/></li>
         </ul>
 
@@ -178,17 +176,17 @@
             <tr>
                 <td><fmt:message key="subtotal"/>:</td>
                 <td class="checkoutPriceColumn">
-                    <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${cart.subtotal}"/></td>
+                    <fmt:formatNumber type="currency" currencySymbol="$ " value="${cart.subtotal}"/></td>
             </tr>
             <tr>
                 <td><fmt:message key="surcharge"/>:</td>
                 <td class="checkoutPriceColumn">
-                    <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${initParam.deliverySurcharge}"/></td>
+                    <fmt:formatNumber type="currency" currencySymbol="$ " value="${initParam.deliverySurcharge}"/></td>
             </tr>
             <tr>
                 <td class="total"><fmt:message key="total"/>:</td>
                 <td class="total checkoutPriceColumn">
-                    <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${cart.total}"/></td>
+                    <fmt:formatNumber type="currency" currencySymbol="$ " value="${cart.total}"/></td>
             </tr>
         </table>
     </div>

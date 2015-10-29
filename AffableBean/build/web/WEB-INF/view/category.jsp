@@ -51,14 +51,14 @@
                     <span class="smallText"><fmt:message key='${product.name}Description'/></span>
                 </td>
 
-                <td><fmt:formatNumber type="currency" currencySymbol="&euro; " value="${product.price}"/></td>
+                <td><fmt:formatNumber type="currency" currencySymbol="$ " value="${product.price}"/></td>
 
                 <td>
                     <form action="<c:url value='addToCart'/>" method="post">
                         <input type="hidden"
                                name="productId"
                                value="${product.id}">
-                        <input type="submit"
+                        <input class="btn btn-primary btn-group-sm" type="submit"
                                name="submit"
                                value="<fmt:message key='addToCart'/>">
                     </form>

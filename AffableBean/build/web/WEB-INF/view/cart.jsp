@@ -57,7 +57,7 @@
     <c:if test="${!empty cart && cart.numberOfItems != 0}">
 
       <h4 id="subtotal"><fmt:message key="subtotal"/>:
-          <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${cart.subtotal}"/>
+          <fmt:formatNumber type="currency" currencySymbol="$ " value="${cart.subtotal}"/>
       </h4>
 
       <table id="cartTable">
@@ -82,10 +82,10 @@
             <td><fmt:message key="${product.name}"/></td>
 
             <td>
-                <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${cartItem.total}"/>
+                <fmt:formatNumber type="currency" currencySymbol="$ " value="${cartItem.total}"/>
                 <br>
                 <span class="smallText">(
-                    <fmt:formatNumber type="currency" currencySymbol="&euro; " value="${product.price}"/>
+                    <fmt:formatNumber type="currency" currencySymbol="$ " value="${product.price}"/>
                     / <fmt:message key="unit"/> )</span>
             </td>
 
@@ -104,12 +104,10 @@
                            name="submit"
                            value="<fmt:message key='update'/>">
                 </form>
+               
             </td>
           </tr>
-
         </c:forEach>
-
       </table>
-
     </c:if>
 </div>

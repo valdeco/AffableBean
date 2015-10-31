@@ -1,10 +1,8 @@
-<%-- Set session-scoped variable to track the view user is coming from.
-     This is used by the language mechanism in the Controller so that
-     users view the same page when switching between English and Czech. --%>
-<c:set var="view" value="/checkout" scope="session"/>
-
+<%--  --%>
 <script src="resources/js/jquery.validate.js" type="text/javascript"></script>
+<script src="resources/js/checkoutValidator.js" type="text/javascript"></script>
 
+<c:set var="view" value="/checkout" scope="session"/>
 <%-- Add Czech field validation messages if 'cs' is the chosen locale --%>
 <c:choose>
   <%-- When 'language' session attribute hasn't been set, check browser's preferred locale --%>
@@ -21,35 +19,8 @@
   </c:otherwise>
 </c:choose>
 
-<script type="text/javascript">
 
-    $(document).ready(function(){
-        $("#checkoutForm").validate({
-            rules: {
-                name: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-                phone: {
-                    required: true,
-                    number: true,
-                    minlength: 9
-                },
-                address: {
-                    required: true
-                },
-                creditcard: {
-                    required: true,
-                    creditcard: true
-                }
-            }
-        });
-    });
-</script>
-
-
-<%-- HTML markup starts below --%>
+<%-- HTML Start --%>
 
 <div id="singleColumn">
     

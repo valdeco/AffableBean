@@ -21,6 +21,10 @@ table {
     border: solid 1px #f5eabe;
 }
 
+#email{
+    text-transform: lowercase;
+}
+
 a {
     color: inherit;
     text-decoration: underline;
@@ -59,7 +63,7 @@ label.error {
 
 .bubble {
     font-weight: bold;
-    background-color: #f5eabe;
+    
     padding: 5px;
     color: inherit;
     display: inline;
@@ -292,9 +296,9 @@ label.error {
 #infoBox { padding: 10px 25px 0 460px }
 
 #priceBox {
-    padding: 10px;
+    padding: 30px;
     border: 1px solid #c3e3e0;
-    background-color: #c3e3e0;
+       
     border-radius: 4px;
 }
 

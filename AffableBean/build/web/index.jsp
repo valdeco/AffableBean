@@ -10,75 +10,51 @@
 
 <div>
     <div class="row">
-        <div class="col-sm-2 col-md-3">
+        <div class="col-md-3">
             <div class="thumbnail">
-                <img src="img/products/milk.jpg" alt="" width="90px">
+                <img src="img/products/milk.jpg" alt="" width="150px">
                 <div class="caption">
                     <h3>Promoções</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p>Cras justo odio, dapibus ac  <br> facilisis in, egestas eget quam.</p>
                     <p> <a href="#" class="btn btn-default btn-sm" role="button">Saiba Mais</a>
                 </div>
             </div>    
         </div>
     <div class="row">
-        <div class="col-sm-2 col-md-3">
+        <div class="col-md-3">
             <div class="thumbnail">
                 <img src="img/products/broccoli.jpg" alt="" width="90px">
                 <div class="caption">
                     <h3>Madeira</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p>Cras justo odio, dapibus ac  <br> facilisis in, egestas eget quam.</p>
                     <p> <a href="#" class="btn btn-default btn-sm" role="button">Saiba Mais</a>
                 </div>
             </div>    
         </div>
     </div>
          <div class="row">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-md-3">
                 <div class="thumbnail">
                     <img src="img/products/cheese.jpg" alt="" width="90px">
                         <div class="caption">
                             <h3>Metal</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                            <p>Cras justo odio, dapibus ac  <br> facilisis in, egestas eget quam.</p>
                             <p> <a href="#" class="btn btn-default btn-sm" role="button">Saiba Mais</a>
                         </div>
                     </div>    
                 </div>
             <div class="row">
-            <div class="col-sm-6 col-md-6">
+            <div class="col-md-3">
                 <div class="thumbnail">
                     <img src="img/products/chicken leg.jpg" alt="" width="90px">
                         <div class="caption">
                             <h3>Especiais</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                            <p> <a href="#" class="btn btn-danger btn-sm" role="button">Saiba Mais</a>
+                            <p>Cras justo odio, dapibus ac  <br> facilisis in, egestas eget quam.</p>
+                            <p> <a href="#" class="btn btn-danger btn-sm" role="button">Aproveite</a>
                         </div>
                     </div>    
                 </div>
             </div>   
         </div>   
-        </div>
-        
+        </div>        
 </div>
-
-<%--
-<div id="indexLeftColumn">
-    <div id="welcomeText">
-        <p><fmt:message key='greeting' /></p>
-        <p><fmt:message key='introText' /></p>
-    </div>
-</div>
-
-<div id="indexRightColumn">
-    <c:forEach var="category" items="${categories}">
-        <div class="categoryBox">
-            <a href="<c:url value='category?${category.id}'/>">
-                <span class="categoryLabel"></span>
-                <span class="categoryLabelText"><fmt:message key='${category.name}'/></span>
-
-                <img src="${initParam.categoryImagePath}${category.name}.jpg"
-                     alt="<fmt:message key='${category.name}'/>" class="categoryImage">
-            </a>
-        </div>
-    </c:forEach>
-</div>
---%>

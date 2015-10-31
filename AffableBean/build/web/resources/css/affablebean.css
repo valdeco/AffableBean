@@ -1,7 +1,7 @@
 /* html tags */
 body {
     font-family: Helvetica, Arial, sans-serif;
-    width: 1000px;
+    width: 1280px;
     text-align: center;
     margin: 0 auto;
     margin-left: 10px;
@@ -95,7 +95,7 @@ label.error {
 /* styles for elements contained in the header, i.e.,
    shopping cart widget, language toggle, and logo */
 #header {
-    width: 1000px;
+    width: 1280px;
     height: 130px;   
 }
 
